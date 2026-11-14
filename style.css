@@ -79,3 +79,41 @@ body {
   margin: 0;
   padding: 1rem;
 }
+
+.team {
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.team h2 {
+  color: darkgreen;
+}
+
+.team-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.member {
+  width: 200px;
+}
+
+.member img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.member h3 {
+  margin: 0.5rem 0 0;
+}
+
+.member p {
+  margin: 0.25rem 0 0;
+  color: dimgray;
+}
