@@ -42,3 +42,40 @@ body {
 .mission p {
   line-height: 1.6;
 }
+
+.products {
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.products h2 {
+  color: darkgreen;
+}
+
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.product {
+  background-color: white;
+  border: 1px solid lightgray;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.product img {
+  display: block;
+  width: 300px;
+  max-width: 100%;
+}
+
+.product h3 {
+  margin: 0;
+  padding: 1rem;
+}
