@@ -1,13 +1,23 @@
+:root {
+  --primary: darkgreen;
+  --accent: goldenrod;
+  --background: whitesmoke;
+  --surface: white;
+  --text: darkslategray;
+  --muted: dimgray;
+  --border: darkseagreen;
+}
+
 body {
   margin: 0;
   font-family: sans-serif;
-  background-color: whitesmoke;
-  color: #222;
+  background-color: var(--background);
+  color: var(--text);
 }
 
 .navbar {
-  background-color: darkgreen;
-  border-bottom: 1px solid white;
+  background-color: var(--primary);
+  border-bottom: 3px solid var(--accent);
 }
 
 .navbar ul {
@@ -20,13 +30,13 @@ body {
 }
 
 .navbar a {
-  color: white;
+  color: var(--surface);
   text-decoration: none;
   font-weight: bold;
 }
 
 .navbar a:hover {
-  text-decoration: underline;
+  color: var(--accent);
 }
 
 .splash {
@@ -35,8 +45,8 @@ body {
   align-items: center;
   justify-content: center;
   padding: 3rem 1rem;
-  background-color: darkgreen;
-  color: white;
+  background-color: var(--primary);
+  color: var(--surface);
 }
 
 .logo {
@@ -60,7 +70,7 @@ body {
 }
 
 .mission h2 {
-  color: darkgreen;
+  color: var(--primary);
 }
 
 .mission p {
@@ -73,7 +83,7 @@ body {
 }
 
 .products h2 {
-  color: darkgreen;
+  color: var(--primary);
 }
 
 .product-list {
@@ -90,8 +100,8 @@ body {
 /* Two columns of cards on wide screens, growing to fill each row */
 .product {
   flex: 1 1 calc(50% - 1.5rem);
-  background-color: white;
-  border: 1px solid lightgray;
+  background-color: var(--surface);
+  border: 1px solid var(--border);
   border-radius: 8px;
   overflow: hidden;
 }
@@ -125,7 +135,7 @@ body {
 }
 
 .team h2 {
-  color: darkgreen;
+  color: var(--primary);
 }
 
 .team-list {
@@ -144,8 +154,8 @@ body {
   flex: 1 1 180px;
   max-width: 260px;
   padding: 1rem;
-  background-color: white;
-  border: 1px solid lightgray;
+  background-color: var(--surface);
+  border: 1px solid var(--border);
   border-radius: 8px;
 }
 
@@ -162,5 +172,5 @@ body {
 
 .member p {
   margin: 0.25rem 0 0;
-  color: dimgray;
+  color: var(--muted);
 }
